@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -337,18 +338,18 @@ footer{background:var(--vino);padding:70px 5% 36px;text-align:center;color:white
 <div class="val-table-wrap">
 <div class="val-table-title"><i class="fas fa-balance-scale"></i> Cruce General de Cifras<span class="val-status" style="margin-left:auto;"><i class="fas fa-check-circle"></i> Consistente</span></div>
 <table class="val-table">
-<thead><tr><th>Fuente</th><th class="num">Festival <small style="font-size:0.65em;opacity:0.75;">(incl. BEVGO)</small></th><th class="num">Droguerías</th><th class="num">Total</th></tr></thead>
+<thead><tr><th>Fuente</th><th class="num">Festival</th><th class="num">Droguerías</th><th class="num">BEVGO</th><th class="num">Total</th></tr></thead>
 <tbody>
-<tr><td>Ingresos y Salidas a PDV</td><td class="num">47</td><td class="num">32</td><td class="num">79</td></tr>
-<tr><td>PDVs únicos visitados</td><td class="num">15</td><td class="num">12</td><td class="num">25</td></tr>
-<tr><td>Promotoras únicas</td><td class="num">11</td><td class="num">9</td><td class="num">18</td></tr>
-<tr><td>Transacciones de venta</td><td class="num">129</td><td class="num">193</td><td class="num">322</td></tr>
-<tr><td>Unidades vendidas</td><td class="num">277</td><td class="num">368</td><td class="num">645</td></tr>
-<tr><td>Sell-out ($)</td><td class="num">$19.69M</td><td class="num">$62.70M</td><td class="num">$82.39M</td></tr>
-<tr><td>Premios entregados</td><td class="num">258 <small style="font-size:0.75em;opacity:0.7;">(127 Fest + 131 BEVGO)</small></td><td class="num">157</td><td class="num">415</td></tr>
-<tr><td>Encuestas Voz Consumidor</td><td class="num">73 <small style="font-size:0.75em;opacity:0.7;">(66 + 7 BEVGO)</small></td><td class="num">176</td><td class="num">249</td></tr>
+<tr><td>Ingresos a PDV</td><td class="num">40</td><td class="num">32</td><td class="num">7</td><td class="num">79</td></tr>
+<tr><td>PDVs únicos visitados</td><td class="num">13</td><td class="num">12</td><td class="num">2</td><td class="num">25</td></tr>
+<tr><td>Promotoras únicas</td><td class="num">8</td><td class="num">9</td><td class="num">3</td><td class="num">18</td></tr>
+<tr><td>Transacciones de venta</td><td class="num">129</td><td class="num">193</td><td class="num">—</td><td class="num">322</td></tr>
+<tr><td>Unidades vendidas</td><td class="num">277</td><td class="num">368</td><td class="num">—</td><td class="num">645</td></tr>
+<tr><td>Sell-out ($)</td><td class="num">$19.69M</td><td class="num">$62.70M</td><td class="num">—</td><td class="num">$82.39M</td></tr>
+<tr><td>Premios entregados</td><td class="num">127</td><td class="num">157</td><td class="num">131</td><td class="num">415</td></tr>
+<tr><td>Encuestas Voz Consumidor</td><td class="num">66</td><td class="num">176</td><td class="num">7</td><td class="num">249</td></tr>
 </tbody>
-<tfoot><tr><td>Cobertura</td><td class="num">100%</td><td class="num">100%</td><td class="num">100%</td></tr></tfoot>
+<tfoot><tr><td>Cobertura</td><td class="num">100%</td><td class="num">100%</td><td class="num">100%</td><td class="num">100%</td></tr></tfoot>
 </table>
 </div>
 <div class="val-notes">
@@ -569,258 +570,168 @@ footer{background:var(--vino);padding:70px 5% 36px;text-align:center;color:white
 </div>
 </section>
 
-
 <a id="galerias"></a>
-<section class="gal-section-wrap">
+
+<section class="gallery-section cream" id="galeria-unificada">
 <style>
-/* ── GALERÍA CARRUSEL ─────────────────────────────────────── */
-.gal-section-wrap{background:linear-gradient(160deg,var(--vino) 0%,var(--red-d) 55%,#1A0000 100%);padding:80px 0 90px;position:relative;overflow:hidden;}
-.gal-section-wrap::before{content:'';position:absolute;inset:0;background-image:radial-gradient(circle,rgba(255,255,255,0.04) 1px,transparent 1px);background-size:36px 36px;}
-.gal-section-wrap .sec-h2{color:white;}
-.gal-section-wrap .eyebrow{color:var(--red-b);}
-.gal-section-wrap .sec-lead{color:rgba(255,255,255,0.6);}
-
-/* tabs */
-.gal-tabs{display:flex;justify-content:center;gap:10px;margin-bottom:44px;flex-wrap:wrap;}
-.gal-tab{border:2px solid rgba(255,255,255,0.2);background:rgba(255,255,255,0.07);backdrop-filter:blur(10px);color:rgba(255,255,255,0.75);font-family:'Barlow',sans-serif;font-size:0.72rem;font-weight:800;letter-spacing:2px;text-transform:uppercase;padding:13px 28px;border-radius:50px;cursor:pointer;transition:all 0.3s;display:flex;align-items:center;gap:9px;}
+.gal-tabs{display:flex;justify-content:center;gap:10px;margin-bottom:32px;flex-wrap:wrap;}
+.gal-tab{border:none;background:white;border:2px solid var(--border);color:var(--body);font-family:'Barlow',sans-serif;font-size:0.72rem;font-weight:800;letter-spacing:2px;text-transform:uppercase;padding:13px 28px;border-radius:50px;cursor:pointer;transition:all 0.3s;display:flex;align-items:center;gap:9px;box-shadow:0 4px 16px rgba(198,40,40,0.06);}
 .gal-tab i{font-size:0.85rem;}
-.gal-tab.active{background:linear-gradient(135deg,var(--red),var(--vino));color:white;border-color:transparent;box-shadow:0 8px 24px rgba(198,40,40,0.5);}
-.gal-tab:hover:not(.active){background:rgba(255,255,255,0.14);border-color:rgba(255,255,255,0.4);color:white;}
-
-/* coverflow stage */
-.coverflow-outer{position:relative;width:100%;overflow:hidden;padding:30px 0 20px;}
-.coverflow-track{display:flex;align-items:center;justify-content:center;gap:0;position:relative;height:520px;perspective:1200px;}
-.cf-slide{position:absolute;width:62%;max-width:860px;height:490px;border-radius:20px;overflow:hidden;cursor:pointer;transition:all 0.55s cubic-bezier(0.25,0.46,0.45,0.94);will-change:transform,opacity,filter;box-shadow:0 8px 40px rgba(0,0,0,0.35);}
-.cf-slide iframe{width:100%;height:100%;border:none;pointer-events:none;}
-.cf-slide.center{transform:translateX(0) scale(1) rotateY(0deg);filter:none;z-index:10;box-shadow:0 30px 80px rgba(0,0,0,0.6);cursor:default;}
-.cf-slide.center iframe{pointer-events:auto;}
-.cf-slide.left{transform:translateX(-68%) scale(0.78) rotateY(28deg);filter:blur(3px) brightness(0.55);z-index:5;}
-.cf-slide.right{transform:translateX(68%) scale(0.78) rotateY(-28deg);filter:blur(3px) brightness(0.55);z-index:5;}
-.cf-slide.hidden{opacity:0;pointer-events:none;z-index:1;}
-
-/* loading overlay dentro del slide */
-.cf-loading{position:absolute;inset:0;background:linear-gradient(135deg,#1A0A0A,#2A0A0A);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;z-index:20;transition:opacity 0.6s;}
-.cf-loading.hide{opacity:0;pointer-events:none;}
-.cf-loading i{font-size:2.4rem;color:var(--red-b);animation:spin 1.4s linear infinite;}
-.cf-loading span{font-size:0.74rem;color:rgba(255,255,255,0.55);letter-spacing:2.5px;text-transform:uppercase;font-weight:700;}
-
-/* nav arrows */
-.cf-nav{position:absolute;top:50%;transform:translateY(-50%);z-index:20;background:rgba(255,255,255,0.1);border:1.5px solid rgba(255,255,255,0.25);color:white;width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:1.1rem;transition:all 0.25s;backdrop-filter:blur(8px);}
-.cf-nav:hover{background:var(--red);border-color:var(--red);box-shadow:0 6px 20px rgba(198,40,40,0.5);}
-.cf-nav.prev{left:16px;}
-.cf-nav.next{right:16px;}
-
-/* dots */
-.cf-dots{display:flex;justify-content:center;gap:8px;margin-top:18px;}
-.cf-dot{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,0.25);cursor:pointer;transition:all 0.3s;}
-.cf-dot.active{background:var(--red);width:24px;border-radius:6px;}
-
-/* info bar debajo del carrusel */
-.gal-info-bar{display:flex;justify-content:center;align-items:flex-start;gap:24px;margin-top:32px;flex-wrap:wrap;}
-.gal-info-card{background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.14);backdrop-filter:blur(10px);border-radius:18px;padding:24px 32px;text-align:center;min-width:160px;transition:all 0.4s;}
-.gal-info-label{font-size:0.6rem;font-weight:800;text-transform:uppercase;letter-spacing:3px;color:rgba(255,255,255,0.5);margin-bottom:5px;}
-.gal-info-val{font-family:'Barlow Condensed',sans-serif;font-size:2.4rem;font-weight:900;color:white;line-height:1;}
-.gal-info-sub{font-size:0.72rem;color:rgba(255,255,255,0.55);margin-top:4px;}
-.gal-info-desc{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);backdrop-filter:blur(10px);border-radius:18px;padding:24px 32px;max-width:480px;flex:1;}
-.gal-info-desc .gal-eyebrow{font-size:0.62rem;font-weight:800;letter-spacing:3px;text-transform:uppercase;color:var(--red-b);margin-bottom:6px;}
-.gal-info-desc h4{font-family:'Barlow Condensed',sans-serif;font-size:1.5rem;font-weight:900;color:white;line-height:1.1;margin-bottom:8px;}
-.gal-info-desc p{font-size:0.84rem;color:rgba(255,255,255,0.65);line-height:1.6;}
-
-/* toolbar link */
-.gal-drive-btn{display:inline-flex;align-items:center;gap:8px;margin-top:14px;background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.22);color:rgba(255,255,255,0.8);font-family:'Barlow',sans-serif;font-size:0.68rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:9px 20px;border-radius:30px;text-decoration:none;transition:all 0.25s;}
-.gal-drive-btn:hover{background:var(--red);border-color:var(--red);color:white;}
-.gal-tip-dark{text-align:center;margin-top:22px;font-size:0.7rem;color:rgba(255,255,255,0.35);letter-spacing:0.5px;}
-.gal-tip-dark i{color:var(--red-b);margin-right:5px;}
+.gal-tab.active{background:linear-gradient(135deg,var(--red),var(--vino));color:white;border-color:transparent;box-shadow:0 8px 24px rgba(198,40,40,0.35);}
+.gal-tab:hover:not(.active){background:var(--blush);border-color:var(--red);color:var(--red);}
+.gal-meta{display:none;animation:fadeIn 0.4s ease;}
+.gal-meta.active{display:block;}
+.gal-frame-wrap{position:relative;background:var(--off);min-height:640px;border-radius:0 0 20px 20px;overflow:hidden;}
+.gal-frame-wrap iframe{width:100%;height:640px;border:none;display:block;}
+.gal-loading{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;pointer-events:none;background:linear-gradient(135deg,var(--off),white);transition:opacity 0.6s;z-index:5;}
+.gal-loading.hide{opacity:0;pointer-events:none;}
+.gal-loading i{font-size:2.4rem;color:var(--red);animation:spin 1.4s linear infinite;}
+.gal-loading span{font-size:0.78rem;color:var(--muted);letter-spacing:2px;text-transform:uppercase;font-weight:700;}
 </style>
-
 <div class="wrap">
-<div class="sec-head reveal" style="padding-bottom:32px;">
+<div class="sec-head reveal">
 <div class="eyebrow">Registro Visual · 3 Canales</div>
 <div class="sec-h2">Galería de Campo</div>
-<p class="sec-lead">Selecciona el canal y navega entre las galerías. Las imágenes provienen directamente de Drive y se actualizan en tiempo real.</p>
+<p class="sec-lead">Selecciona el canal para explorar su registro fotográfico completo. Las imágenes provienen directamente de Drive y se actualizan en tiempo real.</p>
 </div>
 
 <div class="gal-tabs reveal">
-<button class="gal-tab active" onclick="galSwitchChannel(0,this)"><i class="fas fa-music"></i> Festival</button>
-<button class="gal-tab" onclick="galSwitchChannel(1,this)"><i class="fas fa-prescription-bottle-medical"></i> Droguerías</button>
-<button class="gal-tab" onclick="galSwitchChannel(2,this)"><i class="fas fa-star"></i> Actividad Especial</button>
+<button class="gal-tab active" onclick="switchGal('fest',this)"><i class="fas fa-music"></i> Festival</button>
+<button class="gal-tab" onclick="switchGal('drog',this)"><i class="fas fa-prescription-bottle-medical"></i> Droguerías</button>
+<button class="gal-tab" onclick="switchGal('esp',this)"><i class="fas fa-star"></i> Actividad Especial</button>
 </div>
 
-<!-- COVERFLOW -->
-<div class="coverflow-outer reveal">
-<button class="cf-nav prev" onclick="galMove(-1)"><i class="fas fa-chevron-left"></i></button>
-<button class="cf-nav next" onclick="galMove(1)"><i class="fas fa-chevron-right"></i></button>
-<div class="coverflow-track" id="cf-track">
-<div class="cf-slide left" id="cf-0">
-  <div class="cf-loading" id="cf-load-0"><i class="fas fa-circle-notch"></i><span>Cargando</span></div>
-  <iframe id="cf-frame-0"></iframe>
+<!-- META PANEL: Festival -->
+<div class="gal-meta active" id="meta-fest">
+<div class="gallery-hero reveal" style="margin-bottom:24px;">
+<div class="gallery-hero-info">
+<div class="gallery-eyebrow">Galería 01 · El Festival en Vivo</div>
+<h3>Fotografías<br>del Festival</h3>
+<p>El pulso de la activación en piso: degustaciones, bandejas, equipo en campo, vitrinas vivas y momentos shopper de la mecánica Festival en Olímpicas, Éxitos, SAO y Hotel Tativan.</p>
 </div>
-<div class="cf-slide center" id="cf-1">
-  <div class="cf-loading" id="cf-load-1"><i class="fas fa-circle-notch"></i><span>Cargando</span></div>
-  <iframe id="cf-frame-1"></iframe>
-</div>
-<div class="cf-slide right" id="cf-2">
-  <div class="cf-loading" id="cf-load-2"><i class="fas fa-circle-notch"></i><span>Cargando</span></div>
-  <iframe id="cf-frame-2"></iframe>
+<div class="gallery-hero-stats">
+<div class="gh-stat"><span class="gh-val">13</span><div class="gh-lab">PDVs Festival</div></div>
+<div class="gh-stat"><span class="gh-val">277</span><div class="gh-lab">Unidades</div></div>
+<div class="gh-stat"><span class="gh-val">127</span><div class="gh-lab">Premios</div></div>
 </div>
 </div>
-<div class="cf-dots" id="cf-dots"></div>
 </div>
 
-<!-- INFO BAR -->
-<div class="gal-info-bar reveal" id="gal-info-bar">
-<div class="gal-info-desc" id="gal-desc">
-  <div class="gal-eyebrow" id="gal-desc-eyebrow">Galería 01 · El Festival en Vivo</div>
-  <h4 id="gal-desc-title">Fotografías del Festival</h4>
-  <p id="gal-desc-text">Degustaciones, bandejas, equipo en campo y momentos shopper de la mecánica Festival en Olímpicas, Éxitos, SAO y Hotel Tativan.</p>
-  <a class="gal-drive-btn" id="gal-drive-link" href="https://drive.google.com/drive/folders/124rOYvhFq-kc3_yUjqGFCwuyP1iOBkMC?usp=sharing" target="_blank"><i class="fab fa-google-drive"></i> Abrir en Drive</a>
+<!-- META PANEL: Droguerías -->
+<div class="gal-meta" id="meta-drog">
+<div class="gallery-hero reveal" style="margin-bottom:24px;">
+<div class="gallery-hero-info">
+<div class="gallery-eyebrow">Galería 02 · Cadena Especializada</div>
+<h3>Fotografías<br>de Droguerías</h3>
+<p>El registro visual del canal premium: Inglesa, Botica, Economía. Capturas de góndola, asesoría especializada y entrega de obsequios en la cadena que concentró el 76% del sell-out.</p>
 </div>
-<div class="gal-info-card"><div class="gal-info-label" id="gal-stat1-lab">PDVs</div><div class="gal-info-val" id="gal-stat1-val">13</div><div class="gal-info-sub" id="gal-stat1-sub">Festival</div></div>
-<div class="gal-info-card"><div class="gal-info-label" id="gal-stat2-lab">Unidades</div><div class="gal-info-val" id="gal-stat2-val">277</div><div class="gal-info-sub" id="gal-stat2-sub">vendidas</div></div>
-<div class="gal-info-card"><div class="gal-info-label" id="gal-stat3-lab">Premios</div><div class="gal-info-val" id="gal-stat3-val">127</div><div class="gal-info-sub" id="gal-stat3-sub">entregados</div></div>
+<div class="gallery-hero-stats">
+<div class="gh-stat"><span class="gh-val">12</span><div class="gh-lab">PDVs Droguerías</div></div>
+<div class="gh-stat"><span class="gh-val">368</span><div class="gh-lab">Unidades</div></div>
+<div class="gh-stat"><span class="gh-val">$62.7M</span><div class="gh-lab">Sell-Out</div></div>
 </div>
-<div class="gal-tip-dark"><i class="fas fa-hand-pointer"></i> Haz clic en los slides laterales para navegar · Clic en la galería central para abrir fotos en Drive</div>
+</div>
+</div>
+
+<!-- META PANEL: Especial -->
+<div class="gal-meta" id="meta-esp">
+<div class="gallery-hero reveal" style="margin-bottom:24px;">
+<div class="gallery-hero-info">
+<div class="gallery-eyebrow">Galería 03 · Activación Premium</div>
+<h3>Fotografías de la<br>Actividad Especial</h3>
+<p>Registro de la activación BEVGO Valledupar: degustaciones premium, mezcla on-the-fly, masterclass y momentos de portafolio que solo el canal especializado permite.</p>
+</div>
+<div class="gallery-hero-stats">
+<div class="gh-stat"><span class="gh-val">2</span><div class="gh-lab">PDVs Especiales</div></div>
+<div class="gh-stat"><span class="gh-val">131</span><div class="gh-lab">Premios BEVGO</div></div>
+<div class="gh-stat"><span class="gh-val">7</span><div class="gh-lab">Encuestas Voz</div></div>
+</div>
+</div>
+</div>
+
+<!-- VIEWER UNIFICADO -->
+<div class="gallery-viewer reveal">
+<div class="gallery-toolbar" id="gal-toolbar">
+<div class="gallery-toolbar-title" id="gal-toolbar-title"><i class="fas fa-images"></i> Festival · Drive Live</div>
+<div class="gallery-toolbar-actions">
+<a class="gallery-toolbar-btn" id="gal-drive-link" href="https://drive.google.com/drive/folders/124rOYvhFq-kc3_yUjqGFCwuyP1iOBkMC?usp=sharing" target="_blank"><i class="fab fa-google-drive"></i> Abrir en Drive</a>
+<button class="gallery-toolbar-btn" onclick="reloadActiveGallery()"><i class="fas fa-rotate"></i> Recargar</button>
+</div>
+</div>
+<div class="gal-frame-wrap">
+<div class="gal-loading" id="gal-loading"><i class="fas fa-circle-notch"></i><span id="gal-loading-text">Cargando galería del Festival</span></div>
+<iframe id="gal-frame" src="https://drive.google.com/embeddedfolderview?id=124rOYvhFq-kc3_yUjqGFCwuyP1iOBkMC#grid" onload="hideGalLoading()"></iframe>
+</div>
+<div class="gallery-tip"><i class="fas fa-mouse-pointer"></i> Haz clic en cualquier miniatura para abrir el visor completo · Navega con las flechas dentro del visor de Drive · La galería se actualiza automáticamente al subir más fotos</div>
+</div>
 
 </div>
 </section>
 
 <script>
-// ── DATOS POR CANAL ──────────────────────────────────────────
-const GAL_CHANNELS = [
-  {
-    key:'fest',
-    eyebrow:'Galería 01 · El Festival en Vivo',
-    title:'Fotografías del Festival',
-    text:'Degustaciones, bandejas, equipo en campo y momentos shopper en Olímpicas, Éxitos, SAO y Hotel Tativan.',
-    link:'https://drive.google.com/drive/folders/124rOYvhFq-kc3_yUjqGFCwuyP1iOBkMC?usp=sharing',
-    src:'https://drive.google.com/embeddedfolderview?id=124rOYvhFq-kc3_yUjqGFCwuyP1iOBkMC#grid',
-    stats:[{lab:'PDVs',val:'13',sub:'Festival'},{lab:'Unidades',val:'277',sub:'vendidas'},{lab:'Premios',val:'127',sub:'entregados'}]
+const GAL_DATA = {
+  fest: {
+    title: 'Festival · Drive Live',
+    label: 'Cargando galería del Festival',
+    link: 'https://drive.google.com/drive/folders/124rOYvhFq-kc3_yUjqGFCwuyP1iOBkMC?usp=sharing',
+    src: 'https://drive.google.com/embeddedfolderview?id=124rOYvhFq-kc3_yUjqGFCwuyP1iOBkMC#grid'
   },
-  {
-    key:'drog',
-    eyebrow:'Galería 02 · Cadena Especializada',
-    title:'Fotografías de Droguerías',
-    text:'Canal premium: Inglesa, Botica, Economía. Góndola, asesoría especializada y entrega de obsequios. 76% del sell-out.',
-    link:'https://drive.google.com/drive/folders/1CvGws8cbhndyLDrMgOIQZbbW4Oes5LsN?usp=sharing',
-    src:'https://drive.google.com/embeddedfolderview?id=1CvGws8cbhndyLDrMgOIQZbbW4Oes5LsN#grid',
-    stats:[{lab:'PDVs',val:'12',sub:'Droguerías'},{lab:'Unidades',val:'368',sub:'vendidas'},{lab:'Sell-Out',val:'$62.7M',sub:'total canal'}]
+  drog: {
+    title: 'Droguerías · Drive Live',
+    label: 'Cargando galería de Droguerías',
+    link: 'https://drive.google.com/drive/folders/1CvGws8cbhndyLDrMgOIQZbbW4Oes5LsN?usp=sharing',
+    src: 'https://drive.google.com/embeddedfolderview?id=1CvGws8cbhndyLDrMgOIQZbbW4Oes5LsN#grid'
   },
-  {
-    key:'esp',
-    eyebrow:'Galería 03 · Activación Premium',
-    title:'Fotografías Actividad Especial',
-    text:'Activación BEVGO Valledupar: degustaciones premium, mezcla on-the-fly, masterclass y momentos de portafolio exclusivo.',
-    link:'https://drive.google.com/drive/folders/1mTUV_gO6yhkvTFAHYue3vD62h9h1cOjG?usp=sharing',
-    src:'https://drive.google.com/embeddedfolderview?id=1mTUV_gO6yhkvTFAHYue3vD62h9h1cOjG#grid',
-    stats:[{lab:'PDVs',val:'2',sub:'Especiales'},{lab:'Premios',val:'131',sub:'BEVGO'},{lab:'Encuestas',val:'7',sub:'Voz'}]
+  esp: {
+    title: 'Actividad Especial · Drive Live',
+    label: 'Cargando galería de la Actividad Especial',
+    link: 'https://drive.google.com/drive/folders/1mTUV_gO6yhkvTFAHYue3vD62h9h1cOjG?usp=sharing',
+    src: 'https://drive.google.com/embeddedfolderview?id=1mTUV_gO6yhkvTFAHYue3vD62h9h1cOjG#grid'
   }
-];
-
-// ── ESTADO ───────────────────────────────────────────────────
-let galChannel = 0;   // canal activo (0,1,2)
-// Dentro de cada canal se muestran 3 slides en coverflow pero solo hay 1 carpeta por canal
-// El coverflow simula múltiples vistas de la misma carpeta (grid, list, preview)
-// ya que Drive solo ofrece un iframe por carpeta
-const CF_VIEWS = ['#grid','#grid','#grid']; // mismo contenido — visualmente el carrusel cambia foco
-let cfCenter = 1; // índice del slide central (0,1,2)
-
-const SLIDES = [0,1,2];
-
-function buildDots() {
-  const dots = document.getElementById('cf-dots');
-  dots.innerHTML = '';
-  SLIDES.forEach((_, i) => {
-    const d = document.createElement('button');
-    d.className = 'cf-dot' + (i === cfCenter ? ' active' : '');
-    d.onclick = () => galMoveTo(i);
-    dots.appendChild(d);
-  });
-}
-
-function updateSlideClasses() {
-  SLIDES.forEach(i => {
-    const el = document.getElementById('cf-' + i);
-    el.className = 'cf-slide';
-    if (i === cfCenter) el.classList.add('center');
-    else if (i === (cfCenter - 1 + 3) % 3) el.classList.add('left');
-    else el.classList.add('right');
-  });
-  // clicks en laterales
-  SLIDES.forEach(i => {
-    const el = document.getElementById('cf-' + i);
-    if (!el.classList.contains('center')) {
-      el.onclick = () => galMoveTo(i);
-    } else {
-      el.onclick = null;
-    }
-  });
-  // dots
-  document.querySelectorAll('.cf-dot').forEach((d,i) => {
-    d.classList.toggle('active', i === cfCenter);
-  });
-}
-
-function loadSlide(slideIdx, src, label) {
-  const loading = document.getElementById('cf-load-' + slideIdx);
-  const frame = document.getElementById('cf-frame-' + slideIdx);
-  loading.classList.remove('hide');
-  loading.style.opacity = '1';
-  loading.querySelector('span').textContent = label || 'Cargando galería';
-  frame.src = '';
-  setTimeout(() => {
-    frame.src = src;
-    frame.onload = () => {
-      loading.classList.add('hide');
-    };
-    setTimeout(() => loading.classList.add('hide'), 9000);
-  }, 60);
-}
-
-function loadChannel(ch) {
-  const d = GAL_CHANNELS[ch];
-  // Carga el mismo iframe en los 3 slides con pequeño offset de tiempo para efecto visual
-  [0,1,2].forEach((si, order) => {
-    setTimeout(() => loadSlide(si, d.src, 'Cargando · ' + d.key), order * 120);
-  });
-  // info bar
-  document.getElementById('gal-desc-eyebrow').textContent = d.eyebrow;
-  document.getElementById('gal-desc-title').textContent = d.title;
-  document.getElementById('gal-desc-text').textContent = d.text;
-  document.getElementById('gal-drive-link').href = d.link;
-  const ids = ['stat1','stat2','stat3'];
-  ids.forEach((id,i) => {
-    document.getElementById('gal-' + id + '-lab').textContent = d.stats[i].lab;
-    document.getElementById('gal-' + id + '-val').textContent = d.stats[i].val;
-    document.getElementById('gal-' + id + '-sub').textContent = d.stats[i].sub;
-  });
-}
-
-function galSwitchChannel(ch, btn) {
-  if (ch === galChannel) return;
-  galChannel = ch;
+};
+let currentGal = 'fest';
+function switchGal(key, btn) {
+  if (key === currentGal) return;
+  currentGal = key;
+  const d = GAL_DATA[key];
+  // tabs
   document.querySelectorAll('.gal-tab').forEach(t => t.classList.remove('active'));
   btn.classList.add('active');
-  cfCenter = 1;
-  updateSlideClasses();
-  loadChannel(ch);
+  // meta panels
+  document.querySelectorAll('.gal-meta').forEach(m => m.classList.remove('active'));
+  document.getElementById('meta-' + key).classList.add('active');
+  // toolbar
+  document.getElementById('gal-toolbar-title').innerHTML = '<i class="fas fa-images"></i> ' + d.title;
+  document.getElementById('gal-drive-link').href = d.link;
+  // loading
+  const loading = document.getElementById('gal-loading');
+  loading.style.display = 'flex';
+  loading.classList.remove('hide');
+  document.getElementById('gal-loading-text').textContent = d.label;
+  // iframe swap
+  const frame = document.getElementById('gal-frame');
+  frame.src = '';
+  setTimeout(() => { frame.src = d.src; }, 80);
+  // auto-hide loading fallback
+  setTimeout(() => hideGalLoading(), 8000);
 }
-
-function galMoveTo(targetSlideIdx) {
-  cfCenter = targetSlideIdx;
-  updateSlideClasses();
+function hideGalLoading() {
+  const el = document.getElementById('gal-loading');
+  if (el) { el.classList.add('hide'); setTimeout(() => { el.style.display = 'none'; }, 700); }
 }
-
-function galMove(dir) {
-  cfCenter = (cfCenter + dir + 3) % 3;
-  updateSlideClasses();
+function reloadActiveGallery() {
+  const d = GAL_DATA[currentGal];
+  const loading = document.getElementById('gal-loading');
+  loading.style.display = 'flex';
+  loading.classList.remove('hide');
+  const frame = document.getElementById('gal-frame');
+  frame.src = '';
+  setTimeout(() => { frame.src = d.src; }, 80);
+  setTimeout(() => hideGalLoading(), 8000);
 }
-
-// INIT
-buildDots();
-updateSlideClasses();
-loadChannel(0);
+// hide on first load
+setTimeout(() => hideGalLoading(), 8000);
 </script>
-</section>
 
 <section id="consumidor" class="band-white">
 <div class="wrap">
